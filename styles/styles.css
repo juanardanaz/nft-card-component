@@ -1,0 +1,165 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.main_container {
+    margin: auto;
+    width: 20%;
+    position: relative;
+    top: 200px;
+    max-width: 1150px;
+}
+
+.card {
+    width: 320px;
+    height: 545px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.first_text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first_text h1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.first_text h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.first_text .main_paragraph {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 1.6;
+}
+
+.overlay_color{
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    width: 280px;
+    height: 280px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 10px;
+}
+
+.overlay_color:hover {
+    opacity: 0.5;
+}
+
+.icon_view {
+    position: absolute;
+    top: 42%;
+    bottom: 0;
+    left: 42%;
+    right: 0;
+    opacity: 1;
+}
+
+
+.equilibrium_picture {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.equilibrium_picture:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.second_text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.second_text .ethereum_info .ethreum_paragraph{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.second_text .time_info .time_paragraph{
+    color:  hsl(215, 51%, 70%);
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.second_text .ethereum_info, .time_info{
+    display: flex;
+}
+
+.divide_line{
+    text-decoration-line: overline;
+    border: 0.1px solid hsl(215, 51%, 70%);
+}
+
+.avatar_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.avatar_info .avatar_picture{
+    width: 100%;
+    height: auto;
+}
+
+.avatar_info .image_border{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.avatar_info .avatar_paragraph{
+    color:  hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.avatar_info .avatar_paragraph .avatar_name {
+    color: hsl(0, 0%, 100%);
+}
+
+.avatar_info .avatar_paragraph .avatar_name:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Responsive view*/
+
+@media screen and (max-width: 375px) {
+    .main_container{
+        width: 100%;
+        position: relative;
+        left: 28px;
+        height: auto;
+    }
+}
+
+
