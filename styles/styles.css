@@ -110,6 +110,7 @@ body {
 
 .second_text .ethereum_info, .time_info{
     display: flex;
+    align-items: center;
 }
 
 .divide_line{
